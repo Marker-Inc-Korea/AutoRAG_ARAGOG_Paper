@@ -1,7 +1,11 @@
+from dotenv import load_dotenv
 from autorag.evaluator import Evaluator
 
 
 def run():
+    # load environment variables
+    load_dotenv()
+
     # set data path
     qa_data_path = './data/qa.parquet'
     corpus_data_path = './data/corpus.parquet'
